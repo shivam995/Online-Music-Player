@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_gravity="top"
+        android:elevation="8dp"
+        tools:visibility="visible">
+
+
+    <SeekBar
+            android:id="@+id/progressSeekbar"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+            android:id="@+id/text_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progressSeekbar"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+        <ImageButton
+                android:id="@+id/btnPrevious"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                android:rotation="180"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:srcCompat="@drawable/ic_play_arrow_accent_24dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btnPlayPause"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                app:backgroundTint="@color/colorPrimary"
+                android:layout_marginRight="36dp"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_play_arrow_white_24dp"/>
+
+        <ImageButton
+                android:id="@+id/btnNext"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:srcCompat="@drawable/ic_play_arrow_accent_24dp"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
